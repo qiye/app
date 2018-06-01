@@ -53,11 +53,8 @@
 </html>
 <script type="text/javascript" src="script/api.js"></script>
 <script type="text/javascript">
-alert("测试")
-var browser = api.require('webBrowser');
-browser.open({
-    url: './es6.html'
-});
+    
+    alert("1122")
 
     apiready = function () {
         $api.fixStatusBar( $api.dom('header') );
@@ -65,6 +62,12 @@ browser.open({
             style: 'dark',
             color: '#6ab494'
         });
+        alert("webBrowser")
+        var browser = api.require('webBrowser');
+        browser.open({
+            url: './es6.html'
+        });
+
         funIniGroup();
     }
 
